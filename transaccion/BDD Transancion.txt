@@ -1,0 +1,27 @@
+CREATE TABLE public.datos (
+	id serial NOT NULL,
+	correo varchar(100) NOT NULL,
+	contrasena varchar NOT NULL,
+	CONSTRAINT id_pk PRIMARY KEY (id)
+
+);
+
+CREATE TABLE public.login (
+	"idUsuario" serial NOT NULL,
+	"nombreUsuario" varchar(100) NOT NULL,
+	"apellidoUsuario" varchar(100) NOT NULL,
+	"correoUsuario" varchar(20),
+	"contrasenaUsuario" character(55) NOT NULL,
+	id_fk serial NOT NULL,
+	CONSTRAINT "idUsuario_pk" PRIMARY KEY ("idUsuario")
+);
+
+
+Create Table public.login
+(
+    id serial NOT NULL,
+    nombre varchar(100) NOT NULL,
+    apellido varchar(100) NOT NULL,
+    correo varchar(100) NOT NULL,
+    contrasena varchar(150) NOT NULL,
+	PRIMARY KEY(id));
